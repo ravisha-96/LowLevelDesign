@@ -2,11 +2,13 @@ package ParkingLotDesign.parkingSpotManager;
 
 import java.util.List;
 
-public class TwoWheelerParkingSpotManager implements ParkingSpotManager{
-    private List<> 
-    @Override
-    public void addParkingSpace(){
+import ParkingLotDesign.parkingSpot.ParkingSpot;
 
+public class TwoWheelerParkingSpotManager implements ParkingSpotManager{
+    private List<ParkingSpot> twoWheelerParkingSpot; 
+    @Override
+    public void addParkingSpace(ParkingSpot parkingSpot){
+        twoWheelerParkingSpot.add(parkingSpot);
     }
 
     @Override
