@@ -1,0 +1,2 @@
+It is used when we have different objects, we need to decide which object to create on the basis of some condition, and we want this conditional object creation logic at one place (FactoryClass will have this logic).
+So that client can be unaware of the conditions and can create the objects independently.
