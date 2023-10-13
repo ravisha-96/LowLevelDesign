@@ -5,6 +5,8 @@ import CreationalDesignPatterns.AbstractFactoryPattern.factory1.CarFactory1;
 import CreationalDesignPatterns.AbstractFactoryPattern.factory1.LuxuryCarFactory;
 import CreationalDesignPatterns.AbstractFactoryPattern.factory1.OrdinaryCarFactory;
 
+
+//This is the outermost factory
 public class CarFactory2 {
 
     public CarFactory1 getFactoryInstance(String carType){
