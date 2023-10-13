@@ -1,9 +1,9 @@
-package ObserverPattern.AmazonNotify.observable;
+package BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ObserverPattern.AmazonNotify.observer.User;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer.User;
 
 public class Iphone implements Observable{
     List<User> userList = new ArrayList<>();

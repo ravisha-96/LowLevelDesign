@@ -1,8 +1,8 @@
-package FactoryPattern;
+package CreationalDesignPatterns.FactoryPattern;
 
-import FactoryPattern.shape.Circle;
-import FactoryPattern.shape.Square;
-import FactoryPattern.shape.Triangle;
+import CreationalDesignPatterns.FactoryPattern.shape.Circle;
+import CreationalDesignPatterns.FactoryPattern.shape.Square;
+import CreationalDesignPatterns.FactoryPattern.shape.Triangle;
 
 
 //Not very clear why we use factory pattern
@@ -14,5 +14,6 @@ public class Main{
         sqaure.draw();
         ShapeFactory triangle = new ShapeFactory(new Triangle());
         triangle.draw();
+        //just for checking if I can push this
     }
 }

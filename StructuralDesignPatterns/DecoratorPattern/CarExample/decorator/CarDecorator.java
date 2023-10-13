@@ -1,6 +1,6 @@
-package DecoratorPattern.CarExample.decorator;
+package StructuralDesignPatterns.DecoratorPattern.CarExample.decorator;
 
-import DecoratorPattern.CarExample.car.Car;
+import StructuralDesignPatterns.DecoratorPattern.CarExample.car.Car;
 
 public abstract class CarDecorator extends Car{
     

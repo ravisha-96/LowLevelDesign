@@ -1,10 +1,10 @@
-package ObserverPattern;
+package BehavioralDesignPatterns.ObserverPattern;
 
-import ObserverPattern.AmazonNotify.observable.Iphone;
-import ObserverPattern.AmazonNotify.observable.Observable;
-import ObserverPattern.AmazonNotify.observable.Samsung;
-import ObserverPattern.AmazonNotify.observer.Ravi;
-import ObserverPattern.AmazonNotify.observer.Suraj;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable.Iphone;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable.Observable;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable.Samsung;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer.Ravi;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer.Suraj;
 
 public class Main{
     public static void main(String[] args){

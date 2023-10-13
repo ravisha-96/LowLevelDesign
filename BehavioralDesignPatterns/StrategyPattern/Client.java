@@ -1,9 +1,9 @@
-package StrategyPattern;
+package BehavioralDesignPatterns.StrategyPattern;
 
-import StrategyPattern.vehicles.OffRoadVehicle;
-import StrategyPattern.vehicles.PassengerVehicle;
-import StrategyPattern.vehicles.SportyVehicle;
-import StrategyPattern.vehicles.Vehicle;
+import BehavioralDesignPatterns.StrategyPattern.vehicles.OffRoadVehicle;
+import BehavioralDesignPatterns.StrategyPattern.vehicles.PassengerVehicle;
+import BehavioralDesignPatterns.StrategyPattern.vehicles.SportyVehicle;
+import BehavioralDesignPatterns.StrategyPattern.vehicles.Vehicle;
 
 public class Client{
     public static void main(String[] args){

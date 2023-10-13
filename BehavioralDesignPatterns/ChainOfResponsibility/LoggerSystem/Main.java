@@ -1,4 +1,4 @@
-package ChainOfResponsibility.LoggerSystem;
+package BehavioralDesignPatterns.ChainOfResponsibility.LoggerSystem;
 
 public class Main {
     public static void main(String[] args){

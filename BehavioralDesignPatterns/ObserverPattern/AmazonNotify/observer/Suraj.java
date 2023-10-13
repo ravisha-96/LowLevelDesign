@@ -1,6 +1,6 @@
-package ObserverPattern.AmazonNotify.observer;
+package BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer;
 
-import ObserverPattern.AmazonNotify.observable.Observable;
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable.Observable;
 
 public class Suraj implements User{
     Observable observable;

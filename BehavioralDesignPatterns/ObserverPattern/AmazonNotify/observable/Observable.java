@@ -1,6 +1,7 @@
-package ObserverPattern.AmazonNotify.observable;
+package BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observable;
 import java.util.List;
-import ObserverPattern.AmazonNotify.observer.User;
+
+import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer.User;
 
 public interface Observable {
     List<User> userList=null;

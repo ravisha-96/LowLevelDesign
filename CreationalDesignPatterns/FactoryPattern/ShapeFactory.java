@@ -1,6 +1,6 @@
-package FactoryPattern;
+package CreationalDesignPatterns.FactoryPattern;
 
-import FactoryPattern.shape.Shape;
+import CreationalDesignPatterns.FactoryPattern.shape.Shape;
 
 public class ShapeFactory {
     Shape shape;
