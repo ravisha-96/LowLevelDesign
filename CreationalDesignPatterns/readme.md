@@ -5,5 +5,5 @@ Types of creational pattern: (ABFPS)
     (Luxury car + Ordinary Car example)
 2. Builder Pattern  ()
 3. Factory Pattern ( Draw different shape depending on the condition)
-4. Prototype Pattern 
+4. Prototype Pattern (Student, teacher prototype) (cloning)
 5. Singleton Pattern (Only one object)
