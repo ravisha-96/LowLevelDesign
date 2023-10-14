@@ -1,6 +1,6 @@
 package StructuralDesignPatterns.DecoratorPattern.CarExample.decorator;
 
-import StructuralDesignPatterns.DecoratorPattern.CarExample.car.Car;
+import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car.Car;
 
 public class FogLight extends CarDecorator{
     Car car;

@@ -1,10 +1,8 @@
-package StructuralDesignPatterns.DecoratorPattern.CarExample;
+package StructuralDesignPatterns.DecoratorPattern.CarExample.decorator;
 
-import StructuralDesignPatterns.DecoratorPattern.CarExample.car.Car;
-import StructuralDesignPatterns.DecoratorPattern.CarExample.car.Nexon;
-import StructuralDesignPatterns.DecoratorPattern.CarExample.car.Punch;
-import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.FogLight;
-import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.SeatCover;
+import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car.Car;
+import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car.Nexon;
+import StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car.Punch;
 
 public class Main {
     public static void main(String[] args){

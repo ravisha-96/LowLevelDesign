@@ -1,4 +1,4 @@
-package StructuralDesignPatterns.DecoratorPattern.CarExample.car;
+package StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car;
 
 public class Punch extends Car{
     @Override
