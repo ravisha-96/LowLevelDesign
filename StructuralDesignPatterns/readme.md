@@ -5,7 +5,10 @@ Types: (ABCDFFP)
 
 1. Adapter Pattern 
     Bridge between existing interface and expected interface
-2. Bridge Pattern 
+    
+2. Bridge Pattern
+    This pattern helps to decouple an abstraction from its implementation, so that the two can vary independently.
+
 3. Composite Pattern
 4. Decorator Pattern
     (Pizza, Nexon, Punch, FogLight, SeatCover example)

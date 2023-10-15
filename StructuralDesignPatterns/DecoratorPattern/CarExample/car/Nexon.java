@@ -1,4 +1,4 @@
-package StructuralDesignPatterns.DecoratorPattern.CarExample.decorator.car;
+package StructuralDesignPatterns.DecoratorPattern.CarExample.car;
 
 public class Nexon extends Car{
     @Override
