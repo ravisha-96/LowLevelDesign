@@ -18,5 +18,8 @@ public class Main {
 
         LivingThings neem = new Neem(new TreeBreathe());
         neem.breatheProcess();
+
+        //We can add as many breatheProcess as required by extending the BreatheImplementor
+        // and without adding new classes to LivingThings.
     }
 }
