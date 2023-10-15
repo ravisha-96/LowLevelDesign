@@ -13,5 +13,10 @@ Types: (ABCDFFP)
 4. Decorator Pattern
     (Pizza, Nexon, Punch, FogLight, SeatCover example)
 5. Facade Pattern
+    Facade means the front wall of a large building
+    Used to hide the system complexity from the client
+    Example - Brake, Accelarator accessible to the driver but internal working hidden
+              AC increase/decrease temp accessible to the user but internal working hidden.
 6. Flyweight Pattern
+    (DogRobot, HumanRobit, RoboticFactory to cache robots)
 7. Proxy Pattern
