@@ -1,7 +1,7 @@
 package CreationalDesignPatterns.SingletonPattern;
 
 public class DBConnectionDoubleLocking {
-    public static DBConnectionDoubleLocking doubleLockConn;
+    private static DBConnectionDoubleLocking doubleLockConn;
 
     private DBConnectionDoubleLocking(){
 

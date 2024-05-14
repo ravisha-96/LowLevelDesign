@@ -9,6 +9,8 @@ public class SeatCover extends CarDecorator{
     }
     @Override
     public double price(){
-        return car.price()+8.0;
+        // System.out.print("seatCover me aaya");
+        System.out.println("seatCover price added");
+        return car.price() + 8.0;
     }
 }

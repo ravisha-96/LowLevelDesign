@@ -1,12 +1,15 @@
+Behavioural design patterns ensure effective communication between different objects in a system, assign responsibilities to them, and make sure they all have synchronized information.
 
-1. Chain of Responsibility
-2. Command Pattern
+
+
+1. Chain of Responsibility (ATM money withdrawl)
+2. Command Pattern           (AirCondition Remote)
 3. Iterator Pattern
-4. Mediator Pattern
+4. Mediator Pattern          (Auction System)
 5. Memento Pattern
-6. Observer Pattern
-7. State Pattern
-8. Strategy Pattern
+6. Observer Pattern          (Amazon Notify Button)
+7. State Pattern             (Vending Machine)
+8. Strategy Pattern          (Normal Drive, Special Drive)
 9. Template Method Pattern
 10. Visitor Pattern
 

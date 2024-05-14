@@ -12,11 +12,14 @@ public class Main {
         //I want nexon with FogLight and SeatCover
         Car nexon = new FogLight(new SeatCover(new Nexon()));
         System.out.println(nexon.price());
+        System.out.println();
         //I want punch with seatcover only
         Car punch = new SeatCover(new Punch());
         System.out.println(punch.price());
+        System.out.println();
         //I want punch with SeatCover, and foglight
         Car punchTopModel = new SeatCover(new FogLight(new Punch()));
         System.out.println(punchTopModel.price());
+        System.out.println();
     }
 }

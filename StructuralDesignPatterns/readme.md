@@ -3,13 +3,13 @@ to form a complex or bigger structure to solve a particular requirement.
 
 Types: (ABCDFFP)
 
-1. Adapter Pattern 
+1. Adapter Pattern (Weight machine example)
     Bridge between existing interface and expected interface
     
-2. Bridge Pattern
+2. Bridge Pattern (breathe and living things example)
     This pattern helps to decouple an abstraction from its implementation, so that the two can vary independently.
 
-3. Composite Pattern
+3. Composite Pattern (File System example)
     Object inside object
     FileSystem example
 

@@ -15,7 +15,7 @@ public class Team {
         this.bench = bench;
     }
 
-    public void getPlaying11(){
+    public void printPlaying11(){
         System.out.println(teamName+ "  Playing 11");
         System.out.println("---------------------------");
         int i=1;
@@ -23,6 +23,10 @@ public class Team {
             System.out.println(i++ + ". "+player);
         }
         System.out.println();
+    }
+
+    public List<Player> getPlaying11(){
+        return playing11;
     }
 
      public void getBench(){

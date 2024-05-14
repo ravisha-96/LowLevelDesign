@@ -8,5 +8,5 @@ public class Match {
     Team teamB;
     MatchType matchType;
     Team tossWinner;
-    // Inning[] innings
+    Inning[] innings
 }

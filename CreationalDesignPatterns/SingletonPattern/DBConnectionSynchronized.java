@@ -8,7 +8,7 @@ public class DBConnectionSynchronized {
     }
 
     //synchronize puts lock on the method so at once only one thread can invoke this method
-    //Here, we lock the method even if a sinlge object is already created
+    //Here, we lock the method even if a single object is already created
     synchronized public static DBConnectionSynchronized getDbConnection(){
         if(syncConn == null){
             syncConn = new DBConnectionSynchronized();

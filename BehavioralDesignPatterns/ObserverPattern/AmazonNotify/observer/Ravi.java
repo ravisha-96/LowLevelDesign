@@ -10,6 +10,6 @@ public class Ravi implements User{
 
     @Override
     public void update(){
-        System.out.println(observable.getClass() + " is back in stock" +observable.getData());
+        System.out.println("Ravi " + observable.getClass() + " is back in stock" + observable.getData());
     }
 }

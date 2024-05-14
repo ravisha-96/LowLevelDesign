@@ -2,6 +2,10 @@ package crickbuzz;
 
 import java.util.List;
 
+import crickbuzz.inning.Ball;
+import crickbuzz.inning.BallType;
+import crickbuzz.inning.Over;
+import crickbuzz.inning.RunsScored;
 import crickbuzz.player.Person;
 import crickbuzz.player.Player;
 import crickbuzz.player.PlayerType;
@@ -29,7 +33,7 @@ public class Main {
         List<Player> benchInd = List.of(surya, kishan, shardul);
 
         Team indiaTeam = new Team("INDIA", playing11Ind, benchInd);
-        indiaTeam.getPlaying11();
+        indiaTeam.printPlaying11();
 
         //create team Australia
         Player warner = new Player(new Person("Warner", 35), PlayerType.BATSMAN);
@@ -48,10 +52,20 @@ public class Main {
         Player hazlewood = new Player(new Person("Hazlewood", 29), PlayerType.BOWLER);
 
         List<Player> playing11Aus = List.of(marsh, warner, smith, labuschagne, stoinis, inglish, maxwell, stark, cummins, zampa, hazlewood);
-        List<Player> benchAus = List.of(surya, kishan, shardul);
+        List<Player> benchAus = List.of(carey, green, abott);
 
         Team ausTeam = new Team("AUSTRALIA", playing11Aus, benchAus);
-        ausTeam.getPlaying11();
+        ausTeam.printPlaying11();
+
+        //Let us start the match of 1 over
+        System.out.println("match started");
+        Ball ball1 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Ball ball2 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Ball ball3 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Ball ball4 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Ball ball5 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Ball ball6 = new Ball(1, BallType.LEGAL, RunsScored.FOUR, battingTeam.getPlaying11().get(0), bowlingTeam.getPlaying11().get(10));
+        Over over = new Over(1, List.of(ball1, ball2, ball3, ball4, ball5, ball6));
     }
 
 }
