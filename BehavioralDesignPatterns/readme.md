@@ -29,6 +29,7 @@ Behavioural design patterns ensure effective communication between different obj
 4. Mediator Pattern
     Lets you reduce chaotic dependencies between objects. The pattern restricts direct 
     communications between the objects and forces them to collaborate only via a mediator object
+    Example - Auction System, Air Traffic Controller, 
 
 5. Memento Pattern
     Lets you save and restore the previous state of an object without revealing the details of its imlemntation.
@@ -37,7 +38,8 @@ Behavioural design patterns ensure effective communication between different obj
     Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they're observing.
 
 7. State Pattern
-    Lets an object alter its behavior when its internal state changes. It appears as if the oject changes its class
+    Lets an object alter its behavior when its internal state changes. It appears as if the oject changes its class.
+    Use the State pattern when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently.
 
 8. Strategy Pattern
     Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable

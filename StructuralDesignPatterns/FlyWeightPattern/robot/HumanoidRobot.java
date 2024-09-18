@@ -20,6 +20,6 @@ public class HumanoidRobot implements Robot{
     }
     @Override
     public void display(int x, int y){
-        System.out.println("Humanoid Robot: " + body + " "+ x + " "+y);
+        System.out.println(body.getGraphics() + " "+ x + " "+y);
     }
 }

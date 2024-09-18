@@ -16,7 +16,7 @@ public class Main {
         parentDir.ls();
 
 
-        //raverse the entiry FileSystem starting from child directory
+        //Traverse the entiry FileSystem starting from child directory
         System.out.println("Traversing the child directory: ");
         childDir.ls();
     }

@@ -6,7 +6,6 @@ import java.util.List;
 public class Auction implements AuctionMediator{
     private List<Colleague> bidderList = new ArrayList<>();
 
-
     public void addBidder(Colleague bidder){
         //Mediator registers the bidder
         bidderList.add(bidder);
@@ -17,7 +16,7 @@ public class Auction implements AuctionMediator{
         //Mediator notifies every bidder except the one who has places the bid
         for(Colleague colleague: bidderList){
             if( !colleague.getTeamName().equals(bidder.getTeamName())){
-                colleague.recieveNotification(amount);
+                colleague.recieveNotification(amount, bidder.getTeamName());
             }
         }
     }

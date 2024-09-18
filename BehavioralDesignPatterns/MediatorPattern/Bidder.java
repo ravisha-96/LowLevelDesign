@@ -23,8 +23,8 @@ public class Bidder implements Colleague{
         return teamName;
     }
 
-    public void recieveNotification(double amount){
+    public void recieveNotification(double amount, String bidderTeam){
         //Bidder get the notification from the mediator about the new bidding
-        System.out.println(teamName+ " Got a notification for the bid of amount "+ amount);
+        System.out.println(teamName+ " Got a notification for the bid of amount "+ amount + " from " + bidderTeam);
     }
 }

@@ -5,6 +5,10 @@ import java.util.List;
 
 import BehavioralDesignPatterns.ObserverPattern.AmazonNotify.observer.User;
 
+enum ItemType{
+    COKE,
+    PEPSI;
+}
 public class Iphone implements Observable{
     List<User> userList = new ArrayList<>();
     int stock = 0;
@@ -38,5 +42,4 @@ public class Iphone implements Observable{
     public int getData(){
         return this.stock;
     }
-
 }

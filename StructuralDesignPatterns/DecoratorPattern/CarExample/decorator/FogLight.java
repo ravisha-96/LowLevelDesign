@@ -10,6 +10,6 @@ public class FogLight extends CarDecorator{
     @Override
     public double price(){
         System.out.println("foglight price added");
-        return car.price()+10.0;
+        return car.price() + 10.0;
     }
 }

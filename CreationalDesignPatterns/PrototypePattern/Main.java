@@ -6,6 +6,7 @@ public class Main {
         Student student1 = new Student("Ravi", 0, 0);
         Student student1Clone = (Student)student1.clone();
         System.out.println("this is student1: " + student1);
+        student1Clone.age = 34;
         System.out.println("This is student2: " + student1Clone);
 
         Teacher teacher1 = new Teacher("R R Suman", "CSE", 55);

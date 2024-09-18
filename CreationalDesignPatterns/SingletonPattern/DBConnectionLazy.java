@@ -10,7 +10,7 @@ public class DBConnectionLazy {
     }
 
     public static DBConnectionLazy getDbConnection(){
-        if( conObject==null ){ // Lazy initialization
+        if(conObject == null){ // Lazy initialization
             //If 2 threads simulateneously comes at null check, then 2 objects will be created
             conObject =  new DBConnectionLazy();
         }

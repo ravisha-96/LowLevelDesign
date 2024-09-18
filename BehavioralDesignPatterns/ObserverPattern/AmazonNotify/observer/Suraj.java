@@ -11,6 +11,6 @@ public class Suraj implements User{
 
     @Override
     public void update(){
-        System.out.println("Suraj " + observable.getClass() + " is back in stock "+observable.getData());
+        System.out.println("Suraj " + observable.getClass() + " is back in stock:  "+ observable.getData());
     }
 }
