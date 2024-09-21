@@ -1,6 +1,6 @@
 package ParkingLotDesign.parkingSpot;
 
-import BehavioralDesignPatterns.StrategyPattern.vehicles.Vehicle;
+import BehavioralDesignPatterns.StrategyPattern.vehicleExample.vehicles.Vehicle;
 
 public class ParkingSpot {
     int id;

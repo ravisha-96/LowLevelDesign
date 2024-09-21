@@ -1,6 +1,6 @@
-package BehavioralDesignPatterns.StrategyPattern.vehicles;
+package BehavioralDesignPatterns.StrategyPattern.vehicleExample.vehicles;
 
-import BehavioralDesignPatterns.StrategyPattern.strategy.SpecialDrive;
+import BehavioralDesignPatterns.StrategyPattern.vehicleExample.strategy.SpecialDrive;
 
 public class OffRoadVehicle extends Vehicle{
     public OffRoadVehicle(){

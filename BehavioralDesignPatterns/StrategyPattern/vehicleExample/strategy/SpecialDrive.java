@@ -1,4 +1,4 @@
-package BehavioralDesignPatterns.StrategyPattern.strategy;
+package BehavioralDesignPatterns.StrategyPattern.vehicleExample.strategy;
 
 public class SpecialDrive implements DriveStrategy{
     @Override
