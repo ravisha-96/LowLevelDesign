@@ -1,6 +1,6 @@
-package BehavioralDesignPatterns.CommandPattern.invoker;
+package BehavioralDesignPatterns.CommandPattern.ACExample.invoker;
 
-import BehavioralDesignPatterns.CommandPattern.command.Command;
+import BehavioralDesignPatterns.CommandPattern.ACExample.command.Command;
 
 public class RemoteControl {
     Command command;

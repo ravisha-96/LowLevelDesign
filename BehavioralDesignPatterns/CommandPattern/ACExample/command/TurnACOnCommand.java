@@ -11,6 +11,6 @@ public class TurnACOnCommand implements Command{
 
     @Override
     public void execute(){
-        ac.turnACOn();
+        this.ac.turnACOn();
     }
 }
