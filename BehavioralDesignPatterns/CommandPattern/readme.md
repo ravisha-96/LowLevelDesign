@@ -1,0 +1,2 @@
+The Command Pattern encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations. In the context of managing shopping cart operations, each action such as adding an item to the cart, removing an item from the cart, or modifying the quantity of an item in the cart can be encapsulated as a command object.
+

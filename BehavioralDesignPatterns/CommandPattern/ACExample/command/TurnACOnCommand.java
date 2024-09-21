@@ -1,6 +1,6 @@
-package BehavioralDesignPatterns.CommandPattern.command;
+package BehavioralDesignPatterns.CommandPattern.ACExample.command;
 
-import BehavioralDesignPatterns.CommandPattern.reciever.AirConditioner;
+import BehavioralDesignPatterns.CommandPattern.ACExample.reciever.AirConditioner;
 
 public class TurnACOnCommand implements Command{
     AirConditioner ac;

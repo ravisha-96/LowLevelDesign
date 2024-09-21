@@ -1,4 +1,4 @@
-package BehavioralDesignPatterns.CommandPattern.reciever;
+package BehavioralDesignPatterns.CommandPattern.ACExample.reciever;
 
 public class AirConditioner {
     boolean isOn;

@@ -2,10 +2,10 @@ package BehavioralDesignPatterns.CommandPattern;
 
 import java.rmi.Remote;
 
-import BehavioralDesignPatterns.CommandPattern.command.TurnACOffCommand;
-import BehavioralDesignPatterns.CommandPattern.command.TurnACOnCommand;
+import BehavioralDesignPatterns.CommandPattern.ACExample.command.TurnACOffCommand;
+import BehavioralDesignPatterns.CommandPattern.ACExample.command.TurnACOnCommand;
+import BehavioralDesignPatterns.CommandPattern.ACExample.reciever.AirConditioner;
 import BehavioralDesignPatterns.CommandPattern.invoker.RemoteControl;
-import BehavioralDesignPatterns.CommandPattern.reciever.AirConditioner;
 
 public class Client {
     public static void main(String[] args) {
