@@ -4,11 +4,11 @@ Command Interface: This is a simple interface with a method execute(). All comma
 
 Concrete Command Classes: These are specific command classes like AddItemCommand, RemoveItemCommand, and ModifyItemCommand. Each of these classes implements the Command interface and overrides the execute() method. In the execute() method, they perform the specific operation, like adding an item to the cart, removing an item from the cart, or modifying the quantity of an item in the cart.
 
-Invoker (ShoppingCart): This class has a method, say performOperation(Command command). When this method is called, it calls the execute() method on the passed command object.
+Invoker (UserInterface): This class has a method, say pressButton(Command command). When this method is called, it calls the execute() method on the passed command object.
 
-Receiver (CartItem): This class has the actual methods for adding an item, removing an item, and modifying the quantity. The execute() method of the command objects calls these methods to perform the operations.
+Receiver (ShoppingCart): This class has the actual methods for adding an item, removing an item, and modifying the quantity. The execute() method of the command objects calls these methods to perform the operations.
 
-So, when a user performs an operation like adding an item to the cart, an AddItemCommand object is created and passed to the performOperation() method of the ShoppingCart class. This method, in turn, calls the execute() method of the AddItemCommand object, which calls the appropriate method of the CartItem class to add the item to the cart.
+So, when a user performs an operation like adding an item to the cart, an AddItemCommand object is created and passed to the pressButton() method of the UserInterface class. This method, in turn, calls the execute() method of the AddItemCommand object, which calls the appropriate method of the ShoppingCart class to add the item to the cart.
 
 This way, the Command Pattern allows us to encapsulate each operation as an object. This makes our code more flexible and easier to extend. For example, if we want to add a new operation, we can simply create a new command class without modifying the existing ShoppingCart or CartItem classes.
 

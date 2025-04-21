@@ -13,7 +13,6 @@ public class Main{
         Observable observable1 = new Iphone();
         observable1.add(new Ravi(observable1));
         observable1.add(new Suraj(observable1));
-
         System.out.println("Suraj and Ravi has subscribed for notify when Iphone comes back into stock");
         observable1.setData(10);
         
@@ -27,6 +26,5 @@ public class Main{
         System.out.println("Suraj and Ravi has subscribed for notify when Samsung comes back into stock");
         observable2.setData(100);
         observable2.setData(200);
-
     }
 }

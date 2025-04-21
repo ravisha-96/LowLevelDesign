@@ -9,6 +9,7 @@ enum ItemType{
     COKE,
     PEPSI;
 }
+
 public class Iphone implements Observable{
     List<User> userList = new ArrayList<>();
     int stock = 0;
@@ -32,7 +33,7 @@ public class Iphone implements Observable{
     }
 
     public void setData(int stock){
-        if( this.stock==0){
+        if(this.stock==0){
             this.stock = stock;
             notifyUsers();
         }

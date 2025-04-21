@@ -23,8 +23,6 @@ public class Main {
         vm.getVendingMachineState().selectProductButton(vm);
         vm.getVendingMachineState().chooseProduct(vm);
         vm.getVendingMachineState().dispenseProduct(vm);
-        
-    }
     
-
+    }
 }
