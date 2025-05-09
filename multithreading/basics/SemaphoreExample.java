@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 public class SemaphoreExample {
     //Create a semaphore lock
     //Without private static, we each object will have its own semaphore lock
-    private static Semaphore sLock = new Semaphore(2);
+    private static Semaphore sLock = new Semaphore(1);
 
     private void printSomething(String thread) {
         try {
