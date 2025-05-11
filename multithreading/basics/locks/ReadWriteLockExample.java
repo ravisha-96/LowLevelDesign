@@ -1,4 +1,4 @@
-package multithreading.basics;
+package multithreading.basics.locks;
 
 import java.sql.Time;
 import java.util.concurrent.locks.ReadWriteLock;
