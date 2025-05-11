@@ -5,13 +5,13 @@ import java.time.LocalTime;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class FixedThreadPoolExecutor {
+public class CachedThreadPoolExecutor {
     private static Time startTime = Time.valueOf(LocalTime.now());
     public static void main(String[] args) {
-        ExecutorService fixedThreadPoolExecutor = Executors.newFixedThreadPool(10);
+        ExecutorService cachedThreadPoolExecutor = Executors.newCachedThreadPool();
         System.out.println("startTime" + startTime);
         for(int i = 0; i < 100; i++) {
-            fixedThreadPoolExecutor.submit(() -> {
+            cachedThreadPoolExecutor.submit(() -> {
                 try {
                     Thread.sleep(3000);
                     System.out.println("Thread completed execution at " + (Time.valueOf(LocalTime.now())));
@@ -20,12 +20,12 @@ public class FixedThreadPoolExecutor {
                 }
             });
         }
-        //As there are 100 tasks, each tasks take 3 secs and threadpool size is 10
+        //As there are 100 tasks, each tasks take 3 secs, as there is no limit on the max number fo thread
+        // in the pool, program should get executed in 3 sec only 
         //Program should take aroudn 30 secs to execute
 
         //Important
-        fixedThreadPoolExecutor.shutdown();
+        cachedThreadPoolExecutor.shutdown();
         // fixedThreadPoolExecutor.shutdownNow();
     }
-   
 }
