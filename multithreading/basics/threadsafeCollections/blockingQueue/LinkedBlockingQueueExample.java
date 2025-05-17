@@ -53,11 +53,21 @@ public class LinkedBlockingQueueExample {
         LinkedBlockingQueue<Integer> lbQ = new LinkedBlockingQueue<>();
 
         for(int i = 0; i < 10; i++) {
-            lbQ.offer(i);
+            try {
+                lbQ.put(i);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         for(int i = 0; i < 10; i++) {
-            System.out.println(lbQ.poll());
+            try {
+                System.out.println(lbQ.take());
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
     }
 }
