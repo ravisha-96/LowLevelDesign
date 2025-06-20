@@ -22,7 +22,6 @@ public class CachedThreadPoolExecutor {
         }
         //As there are 100 tasks, each tasks take 3 secs, as there is no limit on the max number fo thread
         // in the pool, program should get executed in 3 sec only 
-        //Program should take aroudn 30 secs to execute
 
         //Important
         cachedThreadPoolExecutor.shutdown();

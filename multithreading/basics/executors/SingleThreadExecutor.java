@@ -20,7 +20,7 @@ public class SingleThreadExecutor {
                 }
             });
         }
-        //As there are 100 tasks, each tasks take 0.1 secs and threadpool size is always
+        //As there are 100 tasks, each tasks take 0.1 secs and threadpool size is always 1
         //Program should take around 10 secs to execute
         
 

@@ -25,13 +25,21 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class ConcurrentLinkedQueueExample {
     public static void main(String[] args) {
         Queue<Integer> concQueue = new ConcurrentLinkedQueue<>();
-
         for(int i = 0; i < 10; i++) {
             concQueue.offer(i);
         }
-
         for(int i = 0; i < 10; i++) {
             System.out.println(concQueue.poll());
         }
     }
 }
+
+// ✅ When to Use
+
+//ConcurrentLinkedQueue is ideal for scenarios where:
+
+// 1. Multiple threads need to share a queue without blocking each other.
+
+// 2. The order of processing elements is important (FIFO).
+
+// 3. The queue's size can grow dynamically without predefined limits.

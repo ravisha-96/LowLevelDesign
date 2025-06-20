@@ -35,6 +35,7 @@ public class CompletableFutureExample {
         }
 
         // completable future with executors
+        //1. thenApply
         ExecutorService executor = new ThreadPoolExecutor(
                 2,
                 5,
@@ -58,7 +59,7 @@ public class CompletableFutureExample {
             e.printStackTrace();
         }
 
-        //compose
+        //2. thenCompose
         //Next async operation depends on the previous async operation
         CompletableFuture<String> asyncTask3 = CompletableFuture.supplyAsync(() -> {
             try {
@@ -88,7 +89,7 @@ public class CompletableFutureExample {
         }
 
 
-        //thenAccept
+        //3.thenAccept
         //Used in the end stage of the chaining
         //It does not return anything
         CompletableFuture<Void> asyncTask4 = CompletableFuture.supplyAsync(() -> {
@@ -109,14 +110,13 @@ public class CompletableFutureExample {
 
 
 
-        //combine
-        CompletableFuture<String> combinedTask = asyncTask2.thenCombine(asyncTask2, (String val1, String val2) -> {
+        //4.thenCombine
+        CompletableFuture<String> combinedTask = asyncTask1.thenCombine(asyncTask2, (String val1, String val2) -> {
             return val1 + " " + val2;
         }).thenApplyAsync((String combinedVal) -> {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             return "In ApplyAsnc : " + "final Val: " + "My names are: " + combinedVal;

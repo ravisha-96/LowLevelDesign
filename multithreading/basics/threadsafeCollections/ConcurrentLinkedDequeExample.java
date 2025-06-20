@@ -1,8 +1,7 @@
 package multithreading.basics.threadsafeCollections;
 
-import java.util.Queue;
+
 import java.util.concurrent.ConcurrentLinkedDeque;
-import java.util.concurrent.ConcurrentLinkedQueue;
 
 // ConcurrentLinkedDeque<E> is a thread-safe, non-blocking, unbounded double-ended queue (deque) in Java, part of the java.util.concurrent package.
 // It allows elements to be added, removed, and accessed from both ends of the deque concurrently by multiple threads without blocking.

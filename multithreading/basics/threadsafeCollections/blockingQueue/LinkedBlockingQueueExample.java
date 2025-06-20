@@ -56,7 +56,6 @@ public class LinkedBlockingQueueExample {
             try {
                 lbQ.put(i);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -65,7 +64,6 @@ public class LinkedBlockingQueueExample {
             try {
                 System.out.println(lbQ.take());
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

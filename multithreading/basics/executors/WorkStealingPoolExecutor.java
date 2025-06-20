@@ -5,9 +5,12 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.RecursiveTask;
 
+//Implement merge sort using this WorkStealingPoolExecutor
 public class WorkStealingPoolExecutor {
     public static void main(String[] args) {
         ForkJoinPool forkJoinPool = ForkJoinPool.commonPool(); //Imp
+          
+        //Here lambda is not used, instead the object is passed to the submit
         Future<Integer> futureObj = forkJoinPool.submit(new ComputeSumTask(0, 1000000000)); //Imp
         try{
             System.out.println(futureObj.get());
@@ -29,6 +32,7 @@ class ComputeSumTask extends RecursiveTask<Integer> {
     }
     @Override
     protected Integer compute() {
+        System.out.println("yha aaya");
         if(end - start <= 4) {
             int totalSum = 0;
             for(int i = start; i <= end; i++) {
@@ -56,13 +60,10 @@ class ComputeSumTask extends RecursiveTask<Integer> {
 // class ComputeSumAction extends RecursiveAction {
 //     int start;
 //     int end;
-
-
 //     ComputeSumAction(int start, int end) {
 //         this.start = start;
 //         this.end = end;
 //     }
-
 //     @Override
 //     protected void compute() {
 //         if(end - start <= 4) {

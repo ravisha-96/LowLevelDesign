@@ -26,8 +26,16 @@ public class CycleBarrierExample {
         };
 
         new Thread(task).start();
-        new Thread(task).start();
-        new Thread(task).start();
+        try {
+            Thread.sleep(1000);
+            new Thread(task).start();
+            Thread.sleep(1000);
+            new Thread(task).start();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
 
 
         //Reusability example
@@ -54,7 +62,6 @@ public class CycleBarrierExample {
                 e.printStackTrace();
             }
         };
-
         // Start threads
         for (int i = 0; i < numWorkers; i++) {
             new Thread(worker, "Worker-" + i).start();

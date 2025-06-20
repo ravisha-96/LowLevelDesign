@@ -69,7 +69,5 @@ public class ReadWriteLockExample {
         writeThread.start();
         writeThread2.start();
 
-        
-
     }
 }

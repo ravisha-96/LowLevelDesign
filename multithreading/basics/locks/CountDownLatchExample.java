@@ -20,7 +20,6 @@ public class CountDownLatchExample {
         try {
             latch.await(); // Wait here until countDown is called 3 times
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } 
         System.out.println("All workers finished");

@@ -14,7 +14,7 @@ public class RunnableExample implements Runnable{
     //return value
     @Override
     public void run(){
-        // TODO Auto-generated method stub
+        //TODO Auto-generated method stub
         try {
             Thread.sleep(3000);
             System.out.println("thread completed");
@@ -59,7 +59,6 @@ public class RunnableExample implements Runnable{
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 }
-           
         }
         fixedPool.shutdown(); 
     }

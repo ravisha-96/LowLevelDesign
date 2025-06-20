@@ -41,7 +41,7 @@ public class CallableExample implements Callable<Integer>{
                 try {
                     System.out.println(futureObj.get(2, TimeUnit.SECONDS)); //Blocking call
                 } catch (TimeoutException e) {
-                    System.out.println("time out while waiting for the task, is it cancelled" + futureObj.isCancelled());
+                    System.out.println("time out while waiting for the task, is it cancelled " + futureObj.isCancelled());
                     e.printStackTrace();
                 }
                 catch (InterruptedException e) {
@@ -49,9 +49,7 @@ public class CallableExample implements Callable<Integer>{
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 }
-           
         }
         fixedPool.shutdown(); 
     }
-
 }

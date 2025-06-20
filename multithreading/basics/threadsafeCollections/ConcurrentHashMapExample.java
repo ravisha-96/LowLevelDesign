@@ -1,17 +1,17 @@
 package multithreading.basics.threadsafeCollections;
 
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ConcurrentHashMapExample {
 
     public static void main(String[] args) {
-        // ConcurrentHashMap<Integer, Integer> conHashMap = new ConcurrentHashMap<>();
+        ConcurrentHashMap<Integer, Integer> conHashMap = new ConcurrentHashMap<>();
         
         //If we use normal hashmap, then exception will happen
-        Map<Integer, Integer> conHashMap = new HashMap<>();
+        // Map<Integer, Integer> conHashMap = new HashMap<>();
+        
         Thread t1 = new Thread(() -> {
             for(int i = 0; i < 30; i++) {
                 if(i % 2 == 0) {
